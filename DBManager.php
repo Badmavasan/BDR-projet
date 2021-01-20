@@ -410,7 +410,7 @@ function connexionBase() {
 
     function validationMembre($mail_id,$value){
       $conn=connexionBase();
-      $sql_query="UPDATE sportif set etatmembre=$value WHERE email=$mail_id";
+      $sql_query="UPDATE sportif set etatmembre=$value WHERE email='$mail_id'";
       $result = pg_query($conn, $sql_query) or die("Erreur SQL count event");
         pg_close($conn);
         return pg_fetch_all($result);
