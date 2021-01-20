@@ -7,7 +7,7 @@
     template_header('Evenement inscrit',$_SESSION['user_logged_in'],$_SESSION['type']);
     echo <<<EOT
       <div class="col-6">
-        <h1 id="listeEvenementsInscrit">Mes Inscription</h1>
+        <h1 id="listeEvenementsInscrit">Mes Inscriptions</h1>
     EOT;
     $registeredEvents=getRegisteredEvents($_SESSION['login_user']);
     echo <<<EOT
