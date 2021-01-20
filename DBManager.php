@@ -249,7 +249,7 @@ function connexionBase() {
 
   function getTotalparticipants(){
     $conn = connexionBase();
-    $sql_query = "SELECT DISTINCT refsportif FROM inscription JOIN evenementsportif ON inscription.refevenement = evenementsportif.idevenement WHERE dateev>DATEADD(year,DATEDIFF(year,0,getdate())-1.0) AND dateev<=DATEADD(year,DATEDIFF(year,0,getdate())+1.0)";
+    $sql_query = "SELECT DISTINCT refsportif FROM inscription JOIN evenementsportif ON inscription.refevenement = evenementsportif.idevenement WHERE dateev>DATEADD(YEAR(GETDATE()),DATEDIFF(YEAR(GETDATE()),0,getdate())-1.0) AND dateev<=DATEADD(YEAR(GETDATE()),DATEDIFF(YEAR(GETDATE()),0,getdate())+1.0)";
     $result = pg_query($conn, $sql_query) or die("Erreur SQL count event");
     $res = pg_num_rows($result);
     pg_close($conn);
