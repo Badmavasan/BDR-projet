@@ -23,10 +23,10 @@ if(!isset($_SESSION['type'])){
   if($_SESSION['user_logged_in']){
     echo <<<EOT
       <center>
-        <h3>Hello 
+        <h3>Hello
     EOT;
     echo $_SESSION['user_name'];
-	echo "!";
+	  echo "!";
     echo <<<EOT
         </h3>
       </center>

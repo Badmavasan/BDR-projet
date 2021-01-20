@@ -60,6 +60,13 @@ function connexionBase() {
     return  pg_fetch_all($result);
   }
 
+  /**
+    * The following function fetches all the possible answer to the member validation process
+    * according to the database there are 3 values and all the 3 values will be fetched
+    * @param No paramteres
+    * @return associative array of all possible status of the membres who registered for the first time
+    **/
+
   function loadmemberValidation(){
     $conn = connexionBase();
     $sql_query = "SELECT * FROM verifasso";
@@ -407,6 +414,13 @@ function connexionBase() {
         pg_close($conn);
         return pg_fetch_all($result);
     }
+
+    /**
+      * The following function changes the value of the member status in the database
+      * @param1 user mail id who's member status has been changed
+      * @param2 value that is to be replaced. there arent many values possible vbecause the option is given as a dropdown
+      * @return This function directly updates the database so nothing to return 
+      **/
 
     function validationMembre($mail_id,$value){
       $conn=connexionBase();

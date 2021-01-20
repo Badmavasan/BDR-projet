@@ -1,4 +1,13 @@
 <?php
+/**
+  * DESCRIPTION OF THE BACKEND FILE : this is a backend file that contains 2 function : header function that displays the header of every possible page in this SI
+  * Then the footer function which is practically always there
+  * The header changes a
+  * @param1 Description of param1
+  * @param2 Description of param2
+  * @return Description of return value if it exists
+  **/
+
   function template_header($title,$user_logged_in,$user_type) {
   echo <<<EOT
   <!DOCTYPE html>

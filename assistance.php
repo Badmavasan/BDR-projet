@@ -1,4 +1,12 @@
 <?php
+/**
+  * DESCRITPION OF THE FILE : This page contains a form in case there is a technical error
+  * Most of it happens to protype sites such as this one which was not tested with many users.
+  * So this form will collect the error details and provide technical assistance
+  * The backend of this file sends a mail to the give mail in this case the given mail is my personal mail id
+  * It is possible that this function doesnt work in Polytech's server as the server is not configured to the SI
+  * But in order to provide a completely functioning site, this feature <was added
+  **/
 require('functions.php');
 require('DBManager.php');
 session_start();
@@ -28,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <form class="modal-content" action="./assistance.php" method="post">
         <div class="container">
           <h1>Contact Assistance</h1>
-          <p>Remplissez ce formulaire si vous avez des difficultés technique</p>
+          <p>Remplissez ce formulaire si vous avez des difficultés techniques</p>
           <hr>
           <label for="first_name"><b>Nom</b></label>
           <input type="text" placeholder="Taper votre nom" name="first_name" required>
