@@ -18,7 +18,7 @@
       $event_exists=False;
       $event = getEventById($eventID,$event_exists);
       if ($event_exists) {
-        $totalParticipant = getTotalparticipantByID($eventID);
+        $totalParticipant = getTotalparticipants();
         $totalEtudiant = getTotalparticipantBycategorieByEvent($eventID,2);
         $totalPersonnel = getTotalparticipantBycategorieByEvent($eventID,1);
         if(!isset($_SESSION['user_logged_in'])){

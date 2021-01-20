@@ -247,9 +247,9 @@ function connexionBase() {
     * @return Int value of the number of participants
     **/
 
-  function getTotalparticipantByID($eventID){
+  function getTotalparticipants(){
     $conn = connexionBase();
-    $sql_query = "SELECT * FROM inscription WHERE refevenement=$eventID";
+    $sql_query = "SELECT DISTINCT refsportif FROM inscription";
     $result = pg_query($conn, $sql_query) or die("Erreur SQL count event");
     $res = pg_num_rows($result);
     pg_close($conn);
@@ -419,7 +419,7 @@ function connexionBase() {
       * The following function changes the value of the member status in the database
       * @param1 user mail id who's member status has been changed
       * @param2 value that is to be replaced. there arent many values possible vbecause the option is given as a dropdown
-      * @return This function directly updates the database so nothing to return 
+      * @return This function directly updates the database so nothing to return
       **/
 
     function validationMembre($mail_id,$value){
