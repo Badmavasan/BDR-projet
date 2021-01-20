@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <form class="modal-content" action="./assistance.php" method="post">
         <div class="container">
           <h1>Contact Assistance</h1>
-          <p>Remplissez ce formumlaire si vous avez des difficultes techinique</p>
+          <p>Remplissez ce formulaire si vous avez des difficultés technique</p>
           <hr>
           <label for="first_name"><b>Nom</b></label>
           <input type="text" placeholder="Taper votre nom" name="first_name" required>

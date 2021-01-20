@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       template_header('Sportis inscrit',$_SESSION['user_logged_in'],$_SESSION['type']);
       echo <<<EOT
         <div class="col-6">
-          <h1 id="listeEvenementsInscrit" > Liste des inscription à l'événement</h1>
+          <h1 id="listeEvenementsInscrit" > Liste des inscriptions </h1>
       EOT;
       $registeredUsers=getRegisteredUsers($eventID);
       if(!$registeredUsers){

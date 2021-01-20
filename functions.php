@@ -48,7 +48,7 @@
     }
     if($user_type =='sportif'){
       echo <<<EOT
-                  <li><a href="./registeredEvents.php">Evenements Inscrit</a></li>
+                  <li><a href="./registeredEvents.php">Mes Inscriptions</a></li>
       EOT;
     }
     echo <<<EOT

@@ -34,8 +34,8 @@ if(!isset($_SESSION['type'])){
 
  ?>
 <div class="events content-wrapper">
-    <h1>Evenements à venir</h1>
-    <p><?=get_number_of_events()?> Evenements</p>
+    <h1>Evénements à venir</h1>
+    <p><?=get_number_of_events()?> événements</p>
     <div class="events-wrapper">
         <?php
           $events = get_all_events();
@@ -67,23 +67,23 @@ if(!isset($_SESSION['type'])){
             </div>
 
             <div class="container">
-              <label for="event_name"><b>Nom de l'evenement</b></label>
-              <input type="text" placeholder="Nom de l'evenement" name="event_name" required>
+              <label for="event_name"><b>Nom de l'événement</b></label>
+              <input type="text" placeholder="Nom de l'événement" name="event_name" required>
 
               <label for="date"><b>Date</b></label>
               <input type="date" name="date" required>
               <br>
-              <label for="description"><b>Description de l'evenement</b></label>
+              <label for="description"><b>Description de l'événement</b></label>
               <input type="text" placeholder="description" name="description" required>
 
-              <label for="siteWeb"><b>Lien du Site Web de l'evenement</b></label>
+              <label for="siteWeb"><b>Lien du Site Web de l'événement</b></label>
               <input type="text" placeholder="Site web" name="siteWeb" required>
 
               <input class="form-check-input" type="checkbox" id="goodies" name="goodies">
                 <label class="form-check-label" for="defaultCheck1">
                   Goodies
                 </label>
-              <input type="submit" class ="btnp" value = "Creer l'evenement">
+              <input type="submit" class ="btnp" value = "Creer l'événement">
             </div>
           </form>
         </div>

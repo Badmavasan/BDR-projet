@@ -42,19 +42,19 @@ if (isset($_GET['id'])) {
           </p>
           <p>
             <b>
-              Nombres total des participants :
+              Nombre total de participants :
             <?=$totalParticipant?>
            </b>
           </p>
           <p>
             <b>
-              Nombres total des Etudiants :
+              Nombre total d'étudiants :
             <?=$totalEtudiant?>
            </b>
           </p>
           <p>
             <b>
-              Nombres total des Personnels :
+              Nombre total des membres du Personnel :
             <?=$totalPersonnel?>
            </b>
           </p>
