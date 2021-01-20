@@ -50,7 +50,6 @@
             <p>
               <?=$event['siteweb']?>
             </p>
-          <?php if($_SESSION['type']=='organisateur'){ ?>
             <p>
               <b>
                 Nombre total de participants :
@@ -69,6 +68,7 @@
               <?=$totalPersonnel?>
              </b>
             </p>
+          <?php if($_SESSION['type']=='organisateur'){ ?>
             <form action="./registeredUsers.php" method="post">
                 <input type="hidden" name="event_id" value="<?=$event['idevenement']?>">
                 <input type="submit" value="Consulter les inscriptions">
