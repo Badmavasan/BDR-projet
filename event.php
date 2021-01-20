@@ -52,7 +52,7 @@
             </p>
             <p>
               <b>
-                Nombre total de participants :
+                Nombre total de sportif de l'année civile :
               <?=$totalParticipant?>
              </b>
             </p>
