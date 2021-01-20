@@ -1,9 +1,7 @@
 <?php
 /**
-  * DESCRIPTIO
-  * @param1 Description of param1
-  * @param2 Description of param2
-  * @return Description of return value if it exists
+  * DESCRIPTION OF THE FILE : this file is a class file for the evenement sportif
+  * All the attributs of an event is initialized as private variables in order to hash the information and to use object oriented programming to render the site understandable 
   **/
 class Event {
 

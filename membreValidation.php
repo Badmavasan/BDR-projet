@@ -1,4 +1,10 @@
 <?php
+/**
+  * DESCRIPTION OF THE FILE = this file displays only to the organizers where they have alist of emmbers to validate their association status
+  * This display containe a dropdown menu as well as a validation button in order to verify the status of every member
+  * Could have used a global submit but never got the idea until now but anyhow this file redirects to the page where the update takes place in the backend
+  * the display is in tables so its not a dynamic display 
+  **/
 include('./functions.php');
 require('./DBManager.php');
 

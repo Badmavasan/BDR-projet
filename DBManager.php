@@ -4,7 +4,7 @@
   * This file is used to do all the connection towards the database
   * Every insertion, cancellation, extraction is done through this file
   * This file is not intelligent, it doesnt do any verification.
-  * Connection to the datbase is done inside every function and closed inside every function.
+  * Connection to the database is done inside every function and closed inside every function.
   **/
 
   require('./participant.php');

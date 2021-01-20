@@ -1,5 +1,11 @@
 <?php
-
+/**
+  * DESCRIPTION BACK-END FILE : Does the registration
+  * Only accesible for user
+  * uses function from DBManger.php
+  * redirects to registeredEvents.php once the reghistration is DomainException
+  * valuies taken from a form from event.php 
+  **/
 require('DBManager.php');
 
 session_start();

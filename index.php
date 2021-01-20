@@ -1,9 +1,8 @@
 <?php
-// Get all the events
-//$events = getAllevents();
-//include('./login.php');
-// Get the total number of events
-//$total_events = getNumberofEvents();
+/**
+  * DESCRIPTION OF THE FILE : this is the home page for the site that contains all the events. this page redirects to each event page once the user clicks on a event
+  * this page is accessible to everyone and not just users 
+  **/
 require('functions.php');
 require('DBManager.php');
 session_start();

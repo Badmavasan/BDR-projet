@@ -1,5 +1,10 @@
 <?php
-
+/**
+  * DESCRIPTION OF THE FILE :  the file displays all the rehgistrations to which the organizer should provide goodies
+  * each inscription comes with a valider button that validates the goodies_fourni using validationGoodies.php
+  * As there is display, this function uses functions.php to display the header and footer
+  * Also user DBManger.php to extract values of registration and goodies status 
+  **/
 include('./functions.php');
 require('./DBManager.php');
 
