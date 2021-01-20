@@ -1,5 +1,13 @@
 <?php
-
+/**
+  * DESCRIPTION OF THE FILE : This file is the the log in page, this page displays a login form and also check if the credentials are correct
+  * If the credentials are correct then the user is redirected towards index.php
+  * Else the user is notified that there has been an error
+  * There is an option to go back to the index.php
+  * There is an option to sign up as a new user
+  * This page uses DBManger.php functions in order to verify credentials
+  * One fo the drawback is that the password is not hashed and there are ways to retrieve the password easily  so in terms of security, this method lacks
+  **/
   require('./DBManager.php');
 
   if($_SERVER["REQUEST_METHOD"] == "POST"){

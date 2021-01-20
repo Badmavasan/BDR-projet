@@ -2,10 +2,10 @@
 /**
   * DESCRIPTION OF THE BACKEND FILE : this is a backend file that contains 2 function : header function that displays the header of every possible page in this SI
   * Then the footer function which is practically always there
-  * The header changes a
-  * @param1 Description of param1
-  * @param2 Description of param2
-  * @return Description of return value if it exists
+  * The header changes according to the user info, if the user if user then the header is different, if user is organisateur then he has more features
+  * if its no one then they have less features this is handled using sessions this are created in the login stage, if there are no sessions created then the user has the basic site
+  * This file is added in most of the web pages in order to have the header and footer
+  * Using such a file avoids duplicating the same code again and again 
   **/
 
   function template_header($title,$user_logged_in,$user_type) {

@@ -1,4 +1,12 @@
 <?php
+/**
+  * DESCRIPTION OF THE FILE : this file is thee sign up form for a new user.
+  * This function uses participant class in order to mask the infomation
+  * This function verifies if the participant doesnt already exist and inserts the new participant into the database
+  * There is an option to go back to the index.php
+  * There is an option to log in as an existing user
+  * This page uses DBManger.php functions in order to insert a new participant into the database as well as to display all the site universitaires and associations
+  **/
   require('./DBManager.php');
 
   if ($_SERVER["REQUEST_METHOD"] == "POST") {

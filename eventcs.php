@@ -1,5 +1,10 @@
 <?php
-
+/**
+  * DESCRIPTIO
+  * @param1 Description of param1
+  * @param2 Description of param2
+  * @return Description of return value if it exists
+  **/
 class Event {
 
   private $idEvenement;
